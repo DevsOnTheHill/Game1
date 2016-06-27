@@ -135,6 +135,7 @@ public class TestDriver extends JPanel{
 			
 			//Render(interpolation, g);	
 		}
+		/*
 		while(running)
 		{	
 			loopStart=System.currentTimeMillis();
@@ -148,7 +149,10 @@ public class TestDriver extends JPanel{
 			if(wait>0){
 				try {
 					Thread.sleep(wait);
-					System.out.println("wait: " + wait);
+					if(wait != 6){
+						System.out.println("wait: " + wait);
+					}
+					
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -177,7 +181,7 @@ public class TestDriver extends JPanel{
 			
 			//System.out.println(1000/(loopTime+1));	
 		}
-		
+		*/
 	}
 	/*
 	private void Render(float interp, Graphics g){
