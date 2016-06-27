@@ -111,7 +111,10 @@ public class TestDriver extends JPanel{
 			if(wait>0){
 				try{
 					Thread.sleep(wait);
-					System.out.println("wait: " + wait);
+					if(wait != 6){
+						System.out.println("wait: " + wait);
+					}
+					
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
